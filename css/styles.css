@@ -43,7 +43,7 @@ body {
 }
 
 .section .title {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -52,7 +52,7 @@ body {
 }
 
 .section .subtitle {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
   color: var(--dark-color);
@@ -67,7 +67,7 @@ body {
 }
 
 .btn {
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.04em;
   color: var(--primary-brand-color);
   background-color: var(--accent-color);
@@ -93,7 +93,7 @@ body {
 
 
 .site-nav .link {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 16px;
   color: var(--dark-color);
 }
@@ -105,7 +105,7 @@ body {
 /* HERO section */
 .hero .title {
   /* color: #FFFFFF; */
-  font-weight: 600;
+  font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
