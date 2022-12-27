@@ -102,6 +102,13 @@ body {
   color: var(--primary-text-color);
 }
 
+.site-nav .link:hover,
+.site-nav .link:focus, 
+.contacts-nav .link:hover,
+.contacts-nav .link:focus {
+  color: var(--primary-brand-color)
+}
+
 /* HERO section */
 .hero .title {
   /* color: #FFFFFF; */
