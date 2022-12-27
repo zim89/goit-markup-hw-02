@@ -1,0 +1,137 @@
+:root {
+  /* IRIS: CTAs Focused Active states Links */
+  --primary-brand-color: #4D5AE5;
+
+  /* NAVY BLUE: Overlays Shadows Headings */
+  --dark-color: #2E2F42;
+
+  /* GREEN: Valid fields Success messages */
+  --sucsses-color: #31D0AA;
+
+  /* SLATE: */
+  --primary-text-color: #434455;
+
+  /* LIGHT SLATE: Helper text Deemphasized text */
+  --subtle-text-color: #8E8F99;
+
+  /* CORNFLOWER: Accent color Hairlines Subtle backgrounds */
+  --accent-color: #E7E9FC;
+
+  /* CLOUD: Light mode backgrounds Light mode Dialogs/alerts  */
+  --light-color: #F4F4FD;
+  --white-color: #FFFFFF;
+
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  background-color: var(--white-color);
+
+}
+
+/* Common Rules */
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.section .title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--dark-color);
+}
+
+.section .subtitle {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--dark-color);
+}
+
+.accent {
+  color: var(--primary-brand-color);
+}
+
+.light {
+  color: var(--light-color);
+}
+
+.btn {
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--primary-brand-color);
+  background-color: var(--accent-color);
+}
+
+.btn:hover,
+.btn:focus {
+  cursor: pointer;
+  color: var(--white-color);
+  background-color: var(--primary-brand-color);
+}
+
+/* HEADER */
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--dark-color);
+}
+
+
+.site-nav .link {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--dark-color);
+}
+
+.contacts-nav .link {
+  color: var(--primary-text-color);
+}
+
+/* HERO section */
+.hero .title {
+  /* color: #FFFFFF; */
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+}
+
+.btn-hero {
+  /* cursor: pointer; */
+  color: var(--white-color);
+  background-color: var(--primary-brand-color);
+  line-height: 1.19;
+}
+
+/* SKILLS section */
+
+/* TEAM section */
+.team {
+  background-color: var(--light-color);
+}
+
+/* FOOTER */
+
+.footer-wrap {
+  background-color: var(--dark-color);
+  color: var(--accent-color);
+}
+
+.footer-wrap .logo {
+  color: var(--light-color);
+}
