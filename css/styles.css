@@ -1,36 +1,34 @@
 :root {
   /* IRIS: CTAs Focused Active states Links */
-  --primary-brand-color: #4D5AE5;
+  --primary-brand-color: #4d5ae5;
+  --pressed-state-color: #404bbf;
 
   /* NAVY BLUE: Overlays Shadows Headings */
-  --dark-color: #2E2F42;
+  --dark-color: #2e2f42;
 
   /* GREEN: Valid fields Success messages */
-  --sucsses-color: #31D0AA;
+  --sucsses-color: #31d0aa;
 
   /* SLATE: */
   --primary-text-color: #434455;
 
   /* LIGHT SLATE: Helper text Deemphasized text */
-  --subtle-text-color: #8E8F99;
+  --subtle-text-color: #8e8f99;
 
   /* CORNFLOWER: Accent color Hairlines Subtle backgrounds */
-  --accent-color: #E7E9FC;
+  --accent-color: #e7e9fc;
 
   /* CLOUD: Light mode backgrounds Light mode Dialogs/alerts  */
-  --light-color: #F4F4FD;
-  --white-color: #FFFFFF;
-
+  --light-color: #f4f4fd;
+  --white-color: #ffffff;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   background-color: var(--white-color);
-
 }
 
 /* Common Rules */
@@ -42,22 +40,6 @@ body {
   text-decoration: none;
 }
 
-.section .title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  text-transform: capitalize;
-  color: var(--dark-color);
-}
-
-.section .subtitle {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.2;
-  color: var(--dark-color);
-}
-
 .accent {
   color: var(--primary-brand-color);
 }
@@ -67,17 +49,34 @@ body {
 }
 
 .btn {
-  font-weight: 700;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--primary-brand-color);
   background-color: var(--accent-color);
 }
 
+.btn.active,
 .btn:hover,
 .btn:focus {
-  cursor: pointer;
   color: var(--white-color);
-  background-color: var(--primary-brand-color);
+  background-color: var(--pressed-state-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* HEADER */
@@ -92,25 +91,34 @@ body {
 }
 
 .site-nav .link {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
+  line-height: 1.5;
   color: var(--dark-color);
 }
 
+.site-nav .active {
+  color: var(--primary-brand-color);
+}
+
 .contacts-nav .link {
+  line-height: 1.5;
   color: var(--primary-text-color);
 }
 
 .site-nav .link:hover,
-.site-nav .link:focus, 
+.site-nav .link:focus,
 .contacts-nav .link:hover,
 .contacts-nav .link:focus {
-  color: var(--primary-brand-color)
+  color: var(--primary-brand-color);
 }
 
 /* HERO section */
+.hero {
+  background-color: var(--dark-color);
+}
 .hero .title {
-  /* color: #FFFFFF; */
+  color: var(--white-color);
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -118,13 +126,30 @@ body {
 }
 
 .btn-hero {
-  /* cursor: pointer; */
   color: var(--white-color);
   background-color: var(--primary-brand-color);
-  line-height: 1.19;
 }
 
-/* SKILLS section */
+/* SECTION */
+.section .title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--dark-color);
+}
+
+.section .subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--dark-color);
+}
+
+.section .text {
+  line-height: 1.5;
+}
 
 /* TEAM section */
 .team {
@@ -140,4 +165,8 @@ body {
 
 .footer-wrap .logo {
   color: var(--light-color);
+}
+
+.footer-wrap .text {
+  line-height: 1.5;
 }
